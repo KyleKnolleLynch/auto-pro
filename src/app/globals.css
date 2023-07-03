@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --clr-bkg: 210 40% 98%;
+  --clr-content: 217 32% 17%;
+  --clr-accent1: 288 95% 90%;
+  --clr-accent2: 168 83% 78%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr-bkg: 217 32% 17%;
+    --clr-content: 210 40% 98%;
+    --clr-accent1: 288 95% 60%;
+    --clr-accent2: 168 83% 48%;
+  }
+}
+
+:root[data-theme='dark'] {
+  --clr-bkg: 217 32% 17%;
+  --clr-content: 210 40% 98%;
+  --clr-accent1: 288 95% 60%;
+  --clr-accent2: 168 83% 48%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
